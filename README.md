@@ -24,7 +24,7 @@ After successfull conversion the program writes a new `cert.pfx` certificate fil
 # WHAT TO DO WITH cert.pfx file ?
 
 1. Import cert.pfx certificate to Windows 'Local Computer\\Personal' store.
-WARNING: Windows `User` certificate store may not be appropriate if PKCS12 certificate will be used web server.
+WARNING: Windows `User` certificate store may not be appropriate if PKCS12 certificate will be used for web server.
 
 2. Execute on command line (Administrator mode):
 
