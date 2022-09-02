@@ -31,3 +31,6 @@ WARNING: Windows `User` certificate store may not be appropriate if PKCS12 certi
 ```netsh http add sslcert ipport=0.0.0.0:443 certhash={certThumbprint} appid={00000000-0000-0000-0000-000000000000}```
 
 Note: `certThumbprint` is the SHA1 hex string of the PKCS12 certificate and will be displayd by the program on the console after successful cert.pfx generation.
+
+In the screenshot you can see the imported PKCS12 certificate:
+![](Certificate-Local-Computer.png)

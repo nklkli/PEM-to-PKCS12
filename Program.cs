@@ -139,7 +139,7 @@ static void ShowHelp()
     ForegroundColor = ConsoleColor.Black;
     Write("EXAMPLE:");
     resetConsole();
-    WriteLine("pem-to-pfx.exe \"Cool server certificate!\" c:\\cert.pem c:\\privkey.key");
+    WriteLine("pem-to-pkcs12.exe \"Cool server certificate!\" c:\\cert.pem c:\\privkey.key");
     WriteLine();
     WriteLine("After successfull conversion the program writes a new cert.pfx certificate file in current directory.");
 }
@@ -168,7 +168,7 @@ static void PrintSuccessMessage(string certThumbprint, string pfxFilepath)
     Write("WARNING: Windows User certificate store may not be appropriate if PKCS12 certificate will be used web server.");
     resetConsole();
     WriteLine();
-    WriteLine("2. Execute in command line (Administrator mode):");
+    WriteLine("2. Execute on command line (Administrator mode):");
     WriteLine($"netsh http add sslcert ipport=0.0.0.0:443 certhash={certThumbprint} appid={{00000000-0000-0000-0000-000000000000}}");
     WriteLine("----------------------------------------");
 }
